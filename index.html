@@ -1,40 +1,654 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Viva La Vida</title>
-        <link rel="stylesheet" href="/styles.css/main.css">
-        <link rel="stylesheet" href="/styles.css/navbar.css">
-        <link rel="stylesheet" href="/styles.css/footer.css">
+        <link rel="stylesheet" href="styles.css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
     <body>
 
-        <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="assets/logo4.png" alt="VivaLaVida">
-                </div>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header id="header">
+        <nav class="navbar">
+        <div class="nav-logo">
+            <img src="assets/logo4.png" alt="Viva La Vida" />
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#missao">Missão</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+            <li><a href="#parceiros">Parceiros</a></li>
+            <li><a href="#contato" class="btn-nav">Contato</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        </nav>
+    </header>
 
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Como ajudar</a></li>
-                    <li><a href="#">Contato</a></li>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+        <span class="hero-tag">Transformando Vidas pela Saúde</span>
+        <h1>Saúde, <span class="highlight-orange">Educação</span> e<br/>Oportunidade para Todos</h1>
+        <p>A Viva La Vida recruta e capacita pessoas da periferia que desejam ingressar na área da saúde, oferecendo formação, estágios e acesso a exames com preço reduzido.</p>
+        <div class="hero-btns">
+            <a href="#cursos" class="btn-primary">Ver Cursos</a>
+            <a href="#sobre" class="btn-outline">Conheça a ONG</a>
+        </div>
+        </div>
+        <div class="hero-stats">
+        <div class="stat-item">
+            <i class="fa-solid fa-users"></i>
+            <strong>+1.200</strong>
+            <span>Pessoas Capacitadas</span>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-stethoscope"></i>
+            <strong>+800</strong>
+            <span>Exames Realizados</span>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-briefcase-medical"></i>
+            <strong>+300</strong>
+            <span>Estágios Gerados</span>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-leaf"></i>
+            <strong>100%</strong>
+            <span>Sustentável</span>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE NÓS ===== -->
+    <section class="section sobre" id="sobre">
+        <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Quem Somos</span>
+            <h2>Sobre a <span class="highlight-green">Viva La Vida</span></h2>
+            <div class="divider"></div>
+        </div>
+        <div class="sobre-grid">
+            <div class="sobre-text">
+            <p>A <strong>Viva La Vida</strong> é uma organização não governamental fundada com o propósito de transformar realidades nas comunidades periféricas do Brasil. Acreditamos que o acesso à saúde e à educação é um direito de todos, independentemente de origem ou condição socioeconômica.</p>
+            <p>Nossa atuação se concentra em identificar talentos nas periferias e oferecer a eles uma trajetória completa na área da saúde: desde a formação teórica até a inserção no mercado de trabalho por meio de estágios e parcerias com instituições de saúde.</p>
+            <p>Além disso, mantemos uma central de exames diagnósticos com valores acessíveis, garantindo que nenhuma pessoa deixe de cuidar da saúde por falta de recursos financeiros.</p>
+            <a href="#missao" class="btn-primary">Nossa Missão</a>
+            </div>
+            <div class="sobre-cards">
+            <div class="info-card card-green">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Saúde Acessível</h3>
+                <p>Exames e consultas com valores reduzidos para quem mais precisa.</p>
+            </div>
+            <div class="info-card card-blue">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Educação de Qualidade</h3>
+                <p>Cursos técnicos e profissionalizantes na área da saúde.</p>
+            </div>
+            <div class="info-card card-orange">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>Inclusão Social</h3>
+                <p>Geração de emprego e estágios para jovens periféricos.</p>
+            </div>
+            <div class="info-card card-darkgreen">
+                <i class="fa-solid fa-recycle"></i>
+                <h3>Sustentabilidade</h3>
+                <p>Operação 100% sustentável com materiais reciclados e recondicionados.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSÃO, VISÃO E VALORES ===== -->
+    <section class="section missao" id="missao">
+        <div class="container">
+        <div class="section-header light">
+            <span class="section-tag">Propósito</span>
+            <h2>Missão, Visão e <span class="highlight-orange">Valores</span></h2>
+            <div class="divider divider-light"></div>
+        </div>
+        <div class="mvv-grid">
+            <div class="mvv-card">
+            <div class="mvv-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Missão</h3>
+            <p>Promover o acesso à saúde e à educação para pessoas em situação de vulnerabilidade social, capacitando-as para ingressar e se desenvolver na área da saúde, com dignidade e excelência.</p>
+            </div>
+            <div class="mvv-card featured">
+            <div class="mvv-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Visão</h3>
+            <p>Ser referência nacional em inclusão social na saúde, reconhecida pela transformação de vidas e pelo modelo sustentável de atuação que inspira outras organizações e comunidades.</p>
+            </div>
+            <div class="mvv-card">
+            <div class="mvv-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Valores</h3>
+            <ul class="valores-list">
+                <li><i class="fa-solid fa-check"></i> Inclusão e diversidade</li>
+                <li><i class="fa-solid fa-check"></i> Responsabilidade social</li>
+                <li><i class="fa-solid fa-check"></i> Sustentabilidade ambiental</li>
+                <li><i class="fa-solid fa-check"></i> Transparência e ética</li>
+                <li><i class="fa-solid fa-check"></i> Excelência na educação</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section servicos" id="servicos">
+        <div class="container">
+        <div class="section-header">
+            <span class="section-tag">O Que Fazemos</span>
+            <h2>Nossos <span class="highlight-green">Serviços</span></h2>
+            <div class="divider"></div>
+            <p class="section-desc">Oferecemos um ecossistema completo de suporte para quem deseja construir uma carreira na saúde e para quem precisa de atendimento acessível.</p>
+        </div>
+        <div class="servicos-grid">
+            <div class="servico-card">
+            <div class="servico-icon bg-green">
+                <i class="fa-solid fa-book-open-reader"></i>
+            </div>
+            <h3>Formação Técnica</h3>
+            <p>Cursos técnicos e profissionalizantes nas principais áreas da saúde, ministrados por profissionais experientes e com material didático de qualidade.</p>
+            </div>
+            <div class="servico-card">
+            <div class="servico-icon bg-blue">
+                <i class="fa-solid fa-hospital-user"></i>
+            </div>
+            <h3>Estágios e Empregos</h3>
+            <p>Parceria com clínicas, hospitais e laboratórios para oferecer estágios remunerados e oportunidades de emprego aos nossos formandos.</p>
+            </div>
+            <div class="servico-card">
+            <div class="servico-icon bg-orange">
+                <i class="fa-solid fa-microscope"></i>
+            </div>
+            <h3>Exames Acessíveis</h3>
+            <p>Central de exames laboratoriais, de imagem e diagnósticos com preços reduzidos para a comunidade, garantindo saúde preventiva para todos.</p>
+            </div>
+            <div class="servico-card">
+            <div class="servico-icon bg-darkgreen">
+                <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3>Apoio Psicossocial</h3>
+            <p>Suporte emocional e orientação profissional para os alunos durante toda a jornada de formação e inserção no mercado de trabalho.</p>
+            </div>
+            <div class="servico-card">
+            <div class="servico-icon bg-green">
+                <i class="fa-solid fa-laptop-medical"></i>
+            </div>
+            <h3>Educação Digital</h3>
+            <p>Plataforma online com aulas gravadas, materiais complementares e suporte remoto para facilitar o aprendizado em qualquer lugar.</p>
+            </div>
+            <div class="servico-card">
+            <div class="servico-icon bg-blue">
+                <i class="fa-solid fa-certificate"></i>
+            </div>
+            <h3>Certificação</h3>
+            <p>Emissão de certificados reconhecidos pelo mercado ao término de cada curso, valorizando o currículo dos nossos alunos.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== CURSOS ===== -->
+    <section class="section cursos" id="cursos">
+        <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Formação</span>
+            <h2>Cursos <span class="highlight-green">Disponíveis</span></h2>
+            <div class="divider"></div>
+            <p class="section-desc">Conheça os cursos oferecidos pela Viva La Vida. Todos são gratuitos para alunos selecionados e ministrados por profissionais da área da saúde.</p>
+        </div>
+
+        <div class="cursos-grid">
+
+            <div class="curso-card">
+            <div class="curso-header ch-green">
+                <i class="fa-solid fa-syringe"></i>
+                <span class="curso-badge">Gratuito</span>
+            </div>
+            <div class="curso-body">
+                <h3>Técnico em Enfermagem</h3>
+                <p>Formação completa para atuar como técnico de enfermagem em hospitais, clínicas e unidades de saúde.</p>
+                <div class="curso-meta">
+                <span><i class="fa-regular fa-clock"></i> 18 meses</span>
+                <span><i class="fa-solid fa-users"></i> 30 vagas</span>
+                </div>
+                <div class="progress-bar-wrap">
+                <div class="progress-label">
+                    <span>Ocupação das vagas</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+                </div>
+                <a href="#contato" class="btn-curso">Inscreva-se</a>
+            </div>
+            </div>
+
+            <div class="curso-card">
+            <div class="curso-header ch-blue">
+                <i class="fa-solid fa-flask"></i>
+                <span class="curso-badge">Gratuito</span>
+            </div>
+            <div class="curso-body">
+                <h3>Técnico em Análises Clínicas</h3>
+                <p>Capacitação para trabalhar em laboratórios de análises clínicas, realizando coletas e processamento de amostras.</p>
+                <div class="curso-meta">
+                <span><i class="fa-regular fa-clock"></i> 12 meses</span>
+                <span><i class="fa-solid fa-users"></i> 25 vagas</span>
+                </div>
+                <div class="progress-bar-wrap">
+                <div class="progress-label">
+                    <span>Ocupação das vagas</span>
+                    <span>72%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-blue" style="width:72%"></div></div>
+                </div>
+                <a href="#contato" class="btn-curso">Inscreva-se</a>
+            </div>
+            </div>
+
+            <div class="curso-card">
+            <div class="curso-header ch-orange">
+                <i class="fa-solid fa-tooth"></i>
+                <span class="curso-badge">Gratuito</span>
+            </div>
+            <div class="curso-body">
+                <h3>Auxiliar em Saúde Bucal</h3>
+                <p>Formação para atuar como auxiliar odontológico, apoiando dentistas em procedimentos clínicos e de prevenção.</p>
+                <div class="curso-meta">
+                <span><i class="fa-regular fa-clock"></i> 10 meses</span>
+                <span><i class="fa-solid fa-users"></i> 20 vagas</span>
+                </div>
+                <div class="progress-bar-wrap">
+                <div class="progress-label">
+                    <span>Ocupação das vagas</span>
+                    <span>60%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-orange" style="width:60%"></div></div>
+                </div>
+                <a href="#contato" class="btn-curso">Inscreva-se</a>
+            </div>
+            </div>
+
+            <div class="curso-card">
+            <div class="curso-header ch-darkgreen">
+                <i class="fa-solid fa-pills"></i>
+                <span class="curso-badge">Gratuito</span>
+            </div>
+            <div class="curso-body">
+                <h3>Auxiliar de Farmácia</h3>
+                <p>Capacitação para trabalhar em farmácias, drogarias e dispensários, com foco em atendimento e controle de medicamentos.</p>
+                <div class="curso-meta">
+                <span><i class="fa-regular fa-clock"></i> 8 meses</span>
+                <span><i class="fa-solid fa-users"></i> 30 vagas</span>
+                </div>
+                <div class="progress-bar-wrap">
+                <div class="progress-label">
+                    <span>Ocupação das vagas</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-darkgreen" style="width:90%"></div></div>
+                </div>
+                <a href="#contato" class="btn-curso">Inscreva-se</a>
+            </div>
+            </div>
+
+            <div class="curso-card">
+            <div class="curso-header ch-green">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <span class="curso-badge">Gratuito</span>
+            </div>
+            <div class="curso-body">
+                <h3>Socorrista e Primeiros Socorros</h3>
+                <p>Treinamento intensivo em primeiros socorros, suporte básico de vida e atendimento pré-hospitalar de emergência.</p>
+                <div class="curso-meta">
+                <span><i class="fa-regular fa-clock"></i> 4 meses</span>
+                <span><i class="fa-solid fa-users"></i> 40 vagas</span>
+                </div>
+                <div class="progress-bar-wrap">
+                <div class="progress-label">
+                    <span>Ocupação das vagas</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width:50%"></div></div>
+                </div>
+                <a href="#contato" class="btn-curso">Inscreva-se</a>
+            </div>
+            </div>
+
+            <div class="curso-card">
+            <div class="curso-header ch-blue">
+                <i class="fa-solid fa-x-ray"></i>
+                <span class="curso-badge">Gratuito</span>
+            </div>
+            <div class="curso-body">
+                <h3>Técnico em Radiologia</h3>
+                <p>Formação para operar equipamentos de diagnóstico por imagem, como raios-X, tomografia e ultrassonografia.</p>
+                <div class="curso-meta">
+                <span><i class="fa-regular fa-clock"></i> 24 meses</span>
+                <span><i class="fa-solid fa-users"></i> 20 vagas</span>
+                </div>
+                <div class="progress-bar-wrap">
+                <div class="progress-label">
+                    <span>Ocupação das vagas</span>
+                    <span>40%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-blue" style="width:40%"></div></div>
+                </div>
+                <a href="#contato" class="btn-curso">Inscreva-se</a>
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== SUSTENTABILIDADE ===== -->
+    <section class="section sustentabilidade" id="sustentabilidade">
+        <div class="container">
+        <div class="section-header light">
+            <span class="section-tag">Meio Ambiente</span>
+            <h2>Compromisso com a <span class="highlight-orange">Sustentabilidade</span></h2>
+            <div class="divider divider-light"></div>
+            <p class="section-desc light-text">A Viva La Vida opera de forma 100% sustentável, utilizando materiais reciclados e recondicionados em toda a sua estrutura.</p>
+        </div>
+        <div class="sust-grid">
+            <div class="sust-card">
+            <div class="sust-icon"><i class="fa-solid fa-recycle"></i></div>
+            <h3>Materiais Reciclados</h3>
+            <p>Todo o mobiliário, equipamentos e materiais didáticos são provenientes de doações, reaproveitamento e reciclagem, reduzindo o impacto ambiental.</p>
+            </div>
+            <div class="sust-card">
+            <div class="sust-icon"><i class="fa-solid fa-solar-panel"></i></div>
+            <h3>Energia Limpa</h3>
+            <p>Nossas instalações utilizam energia solar e sistemas de eficiência energética, minimizando o consumo de recursos não renováveis.</p>
+            </div>
+            <div class="sust-card">
+            <div class="sust-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3>Gestão da Água</h3>
+            <p>Sistema de captação e reuso de água da chuva para manutenção das áreas verdes e sanitários das nossas unidades.</p>
+            </div>
+            <div class="sust-card">
+            <div class="sust-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Horta Comunitária</h3>
+            <p>Mantemos hortas comunitárias nas nossas unidades, promovendo alimentação saudável e educação ambiental para alunos e comunidade.</p>
+            </div>
+        </div>
+        <div class="sust-banner">
+            <i class="fa-solid fa-earth-americas"></i>
+            <p><strong>Cada ação nossa é pensada para deixar o menor rastro possível no planeta,</strong> porque acreditamos que cuidar das pessoas e cuidar da Terra são missões inseparáveis.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== PARCEIROS ===== -->
+    <section class="section parceiros" id="parceiros">
+        <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Colaboração</span>
+            <h2>Empresas <span class="highlight-green">Parceiras</span></h2>
+            <div class="divider"></div>
+            <p class="section-desc">Nossas parcerias são fundamentais para oferecer estágios, empregos e recursos que ampliam o impacto da nossa missão.</p>
+        </div>
+        <div class="parceiros-grid">
+
+            <div class="parceiro-card">
+            <div class="parceiro-logo-wrap">
+                <div class="parceiro-logo-placeholder bg-blue-light">
+                <i class="fa-solid fa-hospital"></i>
+                </div>
+            </div>
+            <div class="parceiro-info">
+                <h3>HealthCare Brasil</h3>
+                <span class="parceiro-tag">Saúde &amp; Diagnóstico</span>
+                <p>Rede de clínicas e laboratórios que oferece estágios remunerados e absorve nossos formandos em suas unidades espalhadas pelo país.</p>
+                <ul class="parceiro-beneficios">
+                <li><i class="fa-solid fa-check-circle"></i> +150 vagas de estágio por ano</li>
+                <li><i class="fa-solid fa-check-circle"></i> Equipamentos doados para nossos laboratórios</li>
+                <li><i class="fa-solid fa-check-circle"></i> Desconto em exames para alunos</li>
                 </ul>
+                <a href="#contato" class="btn-parceiro">Saiba Mais</a>
+            </div>
+            </div>
 
-                <div class="menu-toggle" id="menu-toggle">
-                    ☰
+            <div class="parceiro-card">
+            <div class="parceiro-logo-wrap">
+                <div class="parceiro-logo-placeholder bg-green-light">
+                <i class="fa-solid fa-leaf"></i>
                 </div>
-            </nav>
-        </header>
+            </div>
+            <div class="parceiro-info">
+                <h3>EcoMed Soluções</h3>
+                <span class="parceiro-tag">Sustentabilidade &amp; Saúde</span>
+                <p>Empresa especializada em soluções sustentáveis para o setor de saúde, fornecendo equipamentos recondicionados e materiais ecológicos para nossas unidades.</p>
+                <ul class="parceiro-beneficios">
+                <li><i class="fa-solid fa-check-circle"></i> Fornecimento de equipamentos recondicionados</li>
+                <li><i class="fa-solid fa-check-circle"></i> Consultoria em gestão ambiental</li>
+                <li><i class="fa-solid fa-check-circle"></i> Apoio financeiro a projetos sociais</li>
+                </ul>
+                <a href="#contato" class="btn-parceiro">Saiba Mais</a>
+            </div>
+            </div>
 
+        </div>
 
+        <div class="seja-parceiro">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <div>
+            <h3>Seja um Parceiro</h3>
+            <p>Sua empresa pode fazer parte dessa transformação. Entre em contato e descubra como podemos construir juntos um futuro mais justo e saudável.</p>
+            </div>
+            <a href="#contato" class="btn-primary">Quero ser Parceiro</a>
+        </div>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <p>© 2026 VivaLaVida - Todos os direitos reservados</p>
-        </footer>
-        <script src="scripts/navbar.js"></script>
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="section depoimentos" id="depoimentos">
+        <div class="container">
+        <div class="section-header light">
+            <span class="section-tag">Histórias Reais</span>
+            <h2>Vidas <span class="highlight-orange">Transformadas</span></h2>
+            <div class="divider divider-light"></div>
+        </div>
+        <div class="depoimentos-grid">
+            <div class="depo-card">
+            <div class="depo-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p>"A Viva La Vida mudou completamente a minha vida. Vim da periferia sem perspectiva e hoje trabalho como técnica de enfermagem em um hospital público. Sou eternamente grata."</p>
+            <div class="depo-author">
+                <div class="depo-avatar bg-green"><span>JS</span></div>
+                <div>
+                <strong>Juliana Santos</strong>
+                <span>Técnica em Enfermagem – Turma 2023</span>
+                </div>
+            </div>
+            </div>
+            <div class="depo-card featured-depo">
+            <div class="depo-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p>"Nunca imaginei que conseguiria trabalhar na área da saúde. O curso de Análises Clínicas me abriu portas que eu achava impossíveis. A ONG não só me ensinou, me acolheu."</p>
+            <div class="depo-author">
+                <div class="depo-avatar bg-blue"><span>MO</span></div>
+                <div>
+                <strong>Marcos Oliveira</strong>
+                <span>Técnico em Análises Clínicas – Turma 2022</span>
+                </div>
+            </div>
+            </div>
+            <div class="depo-card">
+            <div class="depo-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p>"Minha mãe precisava de exames e não tinha condições de pagar. A central de exames da Viva La Vida foi uma bênção. Atendimento humanizado e preço justo."</p>
+            <div class="depo-author">
+                <div class="depo-avatar bg-orange"><span>CF</span></div>
+                <div>
+                <strong>Carla Ferreira</strong>
+                <span>Beneficiária dos Exames Acessíveis</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section contato" id="contato">
+        <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Fale Conosco</span>
+            <h2>Entre em <span class="highlight-green">Contato</span></h2>
+            <div class="divider"></div>
+        </div>
+        <div class="contato-grid">
+            <div class="contato-info">
+            <h3>Venha fazer parte dessa missão</h3>
+            <p>Se você quer se inscrever em um curso, agendar um exame, fazer uma doação ou se tornar parceiro, entre em contato conosco. Estamos prontos para te atender!</p>
+            <div class="contato-items">
+                <div class="contato-item">
+                <div class="contato-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <strong>Endereço</strong>
+                    <span>Rua da Esperança, 123 – Comunidade Verde, São Paulo – SP</span>
+                </div>
+                </div>
+                <div class="contato-item">
+                <div class="contato-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                    <strong>Telefone</strong>
+                    <span>(11) 9 9999-0000</span>
+                </div>
+                </div>
+                <div class="contato-item">
+                <div class="contato-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                    <strong>E-mail</strong>
+                    <span>contato@vivalavida.org.br</span>
+                </div>
+                </div>
+                <div class="contato-item">
+                <div class="contato-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                    <strong>Horário</strong>
+                    <span>Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h</span>
+                </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            </div>
+            <form class="contato-form" onsubmit="return false;">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Seu nome completo" />
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com" />
+                </div>
+                <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="(00) 00000-0000" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <select id="assunto">
+                <option value="">Selecione um assunto</option>
+                <option>Inscrição em Curso</option>
+                <option>Agendamento de Exame</option>
+                <option>Doação</option>
+                <option>Parceria Empresarial</option>
+                <option>Voluntariado</option>
+                <option>Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" onclick="handleForm()">
+                <i class="fa-solid fa-paper-plane"></i> Enviar Mensagem
+            </button>
+            <div id="form-success" class="form-success" style="display:none;">
+                <i class="fa-solid fa-circle-check"></i> Mensagem enviada com sucesso! Entraremos em contato em breve.
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+            <img src="logo4
+    .png" alt="Viva La Vida" class="footer-logo" />
+            <p>Transformando vidas através da saúde, educação e sustentabilidade. Juntos, construímos um futuro mais justo para todos.</p>
+            <div class="social-links">
+                <a href="#" class="social-btn small"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-btn small"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-btn small"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="social-btn small"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            </div>
+            <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#missao">Missão e Valores</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            </div>
+            <div class="footer-links">
+            <h4>Cursos</h4>
+            <ul>
+                <li><a href="#cursos">Técnico em Enfermagem</a></li>
+                <li><a href="#cursos">Análises Clínicas</a></li>
+                <li><a href="#cursos">Auxiliar em Saúde Bucal</a></li>
+                <li><a href="#cursos">Auxiliar de Farmácia</a></li>
+                <li><a href="#cursos">Primeiros Socorros</a></li>
+                <li><a href="#cursos">Técnico em Radiologia</a></li>
+            </ul>
+            </div>
+            <div class="footer-links">
+            <h4>Contato</h4>
+            <ul class="footer-contact">
+                <li><i class="fa-solid fa-location-dot"></i> Rua da Esperança, 123 – SP</li>
+                <li><i class="fa-solid fa-phone"></i> (11) 9 9999-0000</li>
+                <li><i class="fa-solid fa-envelope"></i> contato@vivalavida.org.br</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Viva La Vida ONG. Todos os direitos reservados. | CNPJ: 00.000.000/0001-00</p>
+            <p>Feito com <i class="fa-solid fa-heart" style="color:#e74c3c"></i> para transformar vidas</p>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="scripts/script.js"></script>
     </body>
 </html>
